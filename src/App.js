@@ -1,10 +1,13 @@
 import React from "react";
-import "./App.css";
+import { Cards, Chart, CountryPicker } from "./components";
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Hello from clean slate, yo</header>
+    <div className={styles.container}>
+      <Cards />
+      <CountryPicker />
+      <Chart />
     </div>
   );
 }
