@@ -5,7 +5,6 @@ import cx from "classnames";
 import styles from "./Cards.module.css";
 
 const Cards = ({ basicData }) => {
-  console.log(basicData);
   return (
     <div className={styles.container}>
       <Grid container spacing={3} justify="center">
@@ -27,7 +26,7 @@ const Cards = ({ basicData }) => {
                 <CountUp
                   start={0}
                   end={basicData.confirmed.value}
-                  duration={7}
+                  duration={4}
                   separator=","
                 />
               )}
@@ -38,7 +37,7 @@ const Cards = ({ basicData }) => {
                 : new Date(basicData.lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              Num of active cases of Chinese Virus
+              These people are fighting every second for their lives.
             </Typography>
           </CardContent>
         </Grid>
@@ -52,7 +51,7 @@ const Cards = ({ basicData }) => {
         >
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              Patients Recovered
+              Recovered
             </Typography>
             <Typography variant="h5">
               {basicData.recovered === undefined ? (
@@ -61,7 +60,7 @@ const Cards = ({ basicData }) => {
                 <CountUp
                   start={0}
                   end={basicData.recovered.value}
-                  duration={5}
+                  duration={3}
                   separator=","
                 />
               )}
@@ -72,7 +71,8 @@ const Cards = ({ basicData }) => {
                 : new Date(basicData.lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              Num of recoveries from Chinese Virus
+              Our Warriors, again and again the've proved that we can defeat
+              this.
             </Typography>
           </CardContent>
         </Grid>
@@ -95,7 +95,7 @@ const Cards = ({ basicData }) => {
                 <CountUp
                   start={0}
                   end={basicData.deaths.value}
-                  duration={4}
+                  duration={2}
                   separator=","
                 />
               )}
@@ -106,7 +106,7 @@ const Cards = ({ basicData }) => {
                 : new Date(basicData.lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              Total number of deaths from Chinese Virus.
+              Rest In Peace, These people would not be forgotten.
             </Typography>
           </CardContent>
         </Grid>
