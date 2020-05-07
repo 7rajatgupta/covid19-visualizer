@@ -34,22 +34,22 @@ const App = () => {
       <div className={styles.container}>
         <h1>
           {selectedCountry === ""
-            ? "COVID-19 Live Statistics Globally "
+            ? "COVID-19 Live Stats Globally "
             : `Statistics for ${selectedCountry}`}
         </h1>
         <ThemeProvider theme={darkTheme}>
           <Cards basicData={basicInfo} />
           <h5>Select a Country for specific details:</h5>
           <CountryPicker handleCountryChange={handleCountryChange} />
-          <h3>Visualizer - Data in last 30 days</h3>
+          <h3>Visualizer - Data in last 100 days</h3>
           <Chart basicData={basicInfo} country={selectedCountry} />
         </ThemeProvider>
 
         <div className={styles.footer}>
           <h4>
-            This webapp was developed by Rajat Gupta, dedicated to everyone who
-            is struggling in these difficult times. Kindly donate to the needful
-            people if you can. We are together in this.
+            Webapp developed by <strong>Rajat Gupta</strong>, dedicated to
+            everyone who is struggling in these difficult times. Kindly donate
+            and help those in need. Stay strong, stay safe.
           </h4>
 
           <img className={styles.mask} src={mask} alt="Wear a mask" />
@@ -60,7 +60,7 @@ const App = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View my Other Projects!
+              My Other Projects!
             </a>{" "}
           </h4>
         </div>

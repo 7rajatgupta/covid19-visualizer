@@ -1,4 +1,4 @@
-# Corona Virus Visualizer.
+# COVID-19 Visualizer.
 
 ### View this web app live :
 
